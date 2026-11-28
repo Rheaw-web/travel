@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>台南小旅行 12/6–12/7（插畫版）</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#FFFCF6;--ink:#3E3A39;--coral:#F2A497;--yellow:#F6D27A;--blue:#A8D3E6;--green:#B9DAA5;--purple:#afa8e6;color-scheme:light;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px)}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Huninn","PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;line-height:1.7;font-size:16px}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;background:var(--paper);border-bottom:3px solid var(--ink);padding:env(safe-area-inset-top,0px) 8px 0;display:flex;gap:6px;overflow-x:auto;height:calc(56px + env(safe-area-inset-top,0px));align-items:center}
+nav a{flex:0 0 auto;color:var(--ink);text-decoration:none;border:3px solid var(--ink);border-radius:999px;padding:2px 14px;font-size:15px;background:var(--paper)}
+nav a:nth-child(5n+1){background:var(--coral)}nav a:nth-child(5n+2){background:var(--yellow)}nav a:nth-child(5n+3){background:var(--blue)}nav a:nth-child(5n+4){background:var(--green)}nav a:nth-child(5n){background:var(--purple)}
+main{max-width:640px;margin:0 auto;padding:calc(56px + 16px) 16px 48px}
+section{margin-top:28px}
+h2{font-size:22px;margin:0 0 12px;display:inline-block;background:var(--yellow);border:3px solid var(--ink);border-radius:999px;padding:0 18px}
+.card{background:var(--paper);border:3px solid var(--ink);border-radius:28px;padding:16px;box-shadow:4px 4px 0 var(--ink)}
+.hero{background:var(--blue);padding:0;overflow:hidden;text-align:center}
+.hero svg{display:block;width:100%;height:auto}
+.hero .txt{background:var(--paper);border-top:3px solid var(--ink);padding:14px 12px 18px}
+.hero h1{margin:0;font-size:32px;letter-spacing:2px}
+.hero p{margin:2px 0 12px;font-size:15px}
+.cd{display:flex;gap:8px;justify-content:center}
+.cd div{border:3px solid var(--ink);border-radius:18px;padding:2px 0;width:72px;background:var(--coral)}
+.cd div:nth-child(2){background:var(--yellow)}.cd div:nth-child(3){background:var(--green)}.cd div:nth-child(4){background:var(--purple)}
+.cd b{display:block;font-size:26px;line-height:1.3}.cd span{font-size:12px}
+.go{display:grid;gap:12px}
+.leg{display:flex;gap:12px;align-items:center}
+.leg .ic{flex:0 0 auto;width:54px;height:54px;border:3px solid var(--ink);border-radius:50%;display:grid;place-items:center;background:var(--green)}
+.leg.back .ic{background:var(--coral)}
+.leg small{display:block;font-size:13px}.leg strong{font-size:18px}
+.trn h3{margin:0 0 4px;font-size:20px}.tr{display:flex;justify-content:space-between;align-items:center;padding:4px 2px;margin-top:6px;font-size:19px}.tr .tag{margin:0;font-size:19px;padding:0 12px}
+.tabs{display:flex;gap:10px;margin-bottom:14px}
+.tabs button{flex:1;font:inherit;color:var(--ink);background:var(--paper);border:3px solid var(--ink);border-radius:22px;padding:6px 4px;cursor:pointer;box-shadow:3px 3px 0 var(--ink)}
+.tabs button b{display:block;font-size:22px;line-height:1.2}.tabs button span{font-size:13px}
+.tabs button[aria-selected=true]{background:var(--coral);transform:translateY(2px);box-shadow:1px 1px 0 var(--ink)}
+.panel{animation:pop .5s cubic-bezier(.3,1.6,.5,1)}
+@keyframes pop{0%{transform:scale(.88) translateY(14px);opacity:0}100%{transform:none;opacity:1}}
+ol.tl{list-style:none;margin:0;padding:0 0 0 26px;border-left:4px dashed var(--ink);margin-left:10px}
+.tl li{position:relative;margin-bottom:16px}
+.tl li::before{content:"";position:absolute;left:-39px;top:14px;width:20px;height:20px;border:3px solid var(--ink);border-radius:50%;background:var(--yellow)}
+.tl li:nth-child(4n+2)::before{background:var(--coral)}.tl li:nth-child(4n+3)::before{background:var(--green)}.tl li:nth-child(4n)::before{background:var(--purple)}
+.tl .t{font-size:14px;background:var(--ink);color:var(--paper);border-radius:999px;padding:0 10px;display:inline-block}
+.tl h3{margin:4px 0 2px;font-size:19px}.tl p{margin:0;font-size:14px}
+.tl .addr{font-size:13px;opacity:.75}
+.tag{display:inline-block;font-size:12px;line-height:1.5;border:2px solid var(--ink);border-radius:999px;padding:0 9px;margin:4px 4px 0 0}
+.uber{background:var(--coral)}.bike{background:var(--green)}.share{background:var(--yellow)}.walk{background:var(--purple)}.train{background:var(--blue)}
+.talk{background:var(--paper);border-style:dashed}
+.must{background:var(--coral);transform:rotate(-4deg);font-weight:bold}
+ul.ck{list-style:none;margin:0;padding:0}
+.ck li{margin:0}
+.ck label{display:flex;gap:12px;align-items:center;padding:7px 0;cursor:pointer;border-bottom:2px dotted var(--ink)}
+.ck li:last-child label{border-bottom:0}
+.ck input{appearance:none;-webkit-appearance:none;flex:0 0 auto;width:28px;height:28px;border:3px solid var(--ink);border-radius:10px;background:var(--paper);margin:0;display:grid;place-items:center;cursor:pointer}
+.ck input:checked{background:var(--green)}
+.ck input:checked::after{content:"";width:8px;height:14px;border:solid var(--ink);border-width:0 3px 3px 0;transform:rotate(45deg) translate(-1px,-1px)}
+.ck input:checked+span{text-decoration:line-through;opacity:.55}
+.ck input:focus-visible{outline:3px solid var(--coral);outline-offset:2px}
+.prog{font-size:13px;margin:0 0 6px}
+.stay{background:var(--purple)}
+.stay h3{margin:0 0 6px;font-size:20px}
+.stay .row{display:flex;justify-content:space-between;gap:8px;background:var(--paper);border:3px solid var(--ink);border-radius:18px;padding:6px 12px;margin-top:8px}
+.c1{background:var(--coral)}.c2{background:var(--yellow)}.c3{background:var(--blue)}.c4{background:var(--green)}
+footer{text-align:center;margin-top:32px;font-size:14px}
+.sun-r{transform-box:fill-box;transform-origin:center;animation:spin 24s linear infinite}
+.cloud{animation:drift 9s ease-in-out infinite alternate}.cloud.b{animation-duration:12s;animation-delay:-4s}
+.trainA{animation:roll 7s ease-in-out infinite alternate}
+.lan{transform-box:fill-box;transform-origin:50% 0;animation:sway 3s ease-in-out infinite alternate}.lan.b{animation-delay:-1.5s}
+.star{transform-box:fill-box;transform-origin:center;animation:twk 2s ease-in-out infinite alternate}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes drift{to{transform:translateX(22px)}}
+@keyframes roll{to{transform:translateX(26px)}}
+@keyframes sway{from{transform:rotate(-8deg)}to{transform:rotate(8deg)}}
+@keyframes twk{from{transform:scale(.85)}to{transform:scale(1.15)}}
+.tw{animation:tw 1.6s ease-in-out infinite alternate}.tw.b{animation-delay:-.8s}
+.steam{animation:steam 3s ease-in-out infinite}.steam.b{animation-delay:-1s}.steam.c{animation-delay:-2s}
+@keyframes tw{from{opacity:.4}to{opacity:1}}
+@keyframes steam{0%{transform:translateY(4px);opacity:.9}100%{transform:translateY(-8px);opacity:.15}}
+#go h2{background:var(--blue)}#plan h2{background:var(--coral)}#todo h2{background:var(--green)}#stay h2{background:var(--purple)}#pre h2{background:var(--blue)}#bag h2{background:var(--coral)}
+.bob{animation:bob 2.6s ease-in-out infinite alternate}@keyframes bob{to{transform:translateY(-4px)}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<nav aria-label="主選單">
+<a href="#top">首頁</a><a href="#go">交通</a><a href="#plan">行程</a><a href="#todo">待辦</a><a href="#stay">住宿</a><a href="#food">美食</a><a href="#pre">出發前</a><a href="#bag">行李</a>
+</nav>
+<main id="top">
+<div class="card hero">
+<svg viewBox="0 0 360 234" role="img" aria-label="台南夜空插畫：月亮與星星、千燈祭燈籠塔、聖誕樹、小卷米粉、烤玉米、棺材板與剉冰">
+<rect width="360" height="234" fill="#4C5B7C"/>
+<g class="bob"><path d="M324.25 36.08A20 20 0 1 0 344.63 63.26A17 17 0 1 1 324.25 36.08z" fill="#F6D27A" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"/></g>
+<path class="star" style="animation-delay:-0.0s" d="M30 45L31.5 48.5L35 50L31.5 51.5L30 55L28.5 51.5L25 50L28.5 48.5z" fill="#FFFCF6"/><path class="star" style="animation-delay:-0.4s" d="M52 69L52.9 71.1L55 72L52.9 72.9L52 75L51.1 72.9L49 72L51.1 71.1z" fill="#F6D27A"/><path class="star" style="animation-delay:-0.7s" d="M112 42L113.2 44.8L116 46L113.2 47.2L112 50L110.8 47.2L108 46L110.8 44.8z" fill="#F6D27A"/><path class="star" style="animation-delay:-1.1s" d="M140 65L140.9 67.1L143 68L140.9 68.9L140 71L139.1 68.9L137 68L139.1 67.1z" fill="#FFFCF6"/><path class="star" style="animation-delay:-1.5s" d="M160 31L161.5 34.5L165 36L161.5 37.5L160 41L158.5 37.5L155 36L158.5 34.5z" fill="#FFFCF6"/><path class="star" style="animation-delay:-1.9s" d="M196 51L196.9 53.1L199 54L196.9 54.9L196 57L195.1 54.9L193 54L195.1 53.1z" fill="#F6D27A"/><path class="star" style="animation-delay:-2.2s" d="M184 88L185.2 90.8L188 92L185.2 93.2L184 96L182.8 93.2L180 92L182.8 90.8z" fill="#FFFCF6"/><path class="star" style="animation-delay:-2.6s" d="M214 38L215.2 40.8L218 42L215.2 43.2L214 46L212.8 43.2L210 42L212.8 40.8z" fill="#FFFCF6"/><path class="star" style="animation-delay:-3.0s" d="M292 42L293.2 44.8L296 46L293.2 47.2L292 50L290.8 47.2L288 46L290.8 44.8z" fill="#F6D27A"/><path class="star" style="animation-delay:-3.3s" d="M298 93L298.9 95.1L301 96L298.9 96.9L298 99L297.1 96.9L295 96L297.1 95.1z" fill="#FFFCF6"/><path class="star" style="animation-delay:-3.7s" d="M346 96L347.2 98.8L350 100L347.2 101.2L346 104L344.8 101.2L342 100L344.8 98.8z" fill="#F6D27A"/><path class="star" style="animation-delay:-4.1s" d="M30 101L30.9 103.1L33 104L30.9 104.9L30 107L29.1 104.9L27 104L29.1 103.1z" fill="#FFFCF6"/><path class="star" style="animation-delay:-4.4s" d="M120 101L120.9 103.1L123 104L120.9 104.9L120 107L119.1 104.9L117 104L119.1 103.1z" fill="#F6D27A"/><path class="star" style="animation-delay:-4.8s" d="M236 93L236.9 95.1L239 96L236.9 96.9L236 99L235.1 96.9L233 96L235.1 95.1z" fill="#FFFCF6"/>
+<path d="M0 16 L6 17.1 L28 20.7 L50 22.8 L72 22.6 L94 20.3 L116 16.6 L138 12.7 L160 9.9 L182 9.0 L204 10.5 L226 13.7 L248 17.7 L270 21.1 L292 22.9 L314 22.4 L336 19.9 L358 16.0" fill="none" stroke="#3E3A39" stroke-width="2"/>
+<circle class="tw" cx="6" cy="21.1" r="4" fill="#F2A497" stroke="#3E3A39" stroke-width="2"/>
+<circle class="tw b" cx="28" cy="24.7" r="4" fill="#F6D27A" stroke="#3E3A39" stroke-width="2"/>
+<circle class="tw" cx="50" cy="26.8" r="4" fill="#B9DAA5" stroke="#3E3A39" stroke-width="2"/>
+<circle class="tw b" cx="72" cy="26.6" r="4" fill="#A8D3E6" stroke="#3E3A39" stroke-width="2"/>
+<circle class="tw" cx="94" cy="24.3" r="4" fill="#F2A497" stroke="#3E3A39" stroke-width="2"/>
+<circle class="tw b" cx="116" cy="20.6" r="4" fill="#F6D27A" stroke="#3E3A39" stroke-width="2"/>
+<circle class="tw" cx="138" cy="16.7" r="4" fill="#B9DAA5" stroke="#3E3A39" stroke-width="2"/>
+<circle class="tw b" cx="160" cy="13.9" r="4" fill="#A8D3E6" stroke="#3E3A39" stroke-width="2"/>
+<circle class="tw" cx="182" cy="13.0" r="4" fill="#F2A497" stroke="#3E3A39" stroke-width="2"/>
+<circle class="tw b" cx="204" cy="14.5" r="4" fill="#F6D27A" stroke="#3E3A39" stroke-width="2"/>
+<circle class="tw" cx="226" cy="17.7" r="4" fill="#B9DAA5" stroke="#3E3A39" stroke-width="2"/>
+<circle class="tw b" cx="248" cy="21.7" r="4" fill="#A8D3E6" stroke="#3E3A39" stroke-width="2"/>
+<circle class="tw" cx="270" cy="25.1" r="4" fill="#F2A497" stroke="#3E3A39" stroke-width="2"/>
+<circle class="tw b" cx="292" cy="26.9" r="4" fill="#F6D27A" stroke="#3E3A39" stroke-width="2"/>
+<circle class="tw" cx="314" cy="26.4" r="4" fill="#B9DAA5" stroke="#3E3A39" stroke-width="2"/>
+<circle class="tw b" cx="336" cy="23.9" r="4" fill="#A8D3E6" stroke="#3E3A39" stroke-width="2"/>
+<circle class="tw" cx="358" cy="20.0" r="4" fill="#F2A497" stroke="#3E3A39" stroke-width="2"/>
+<rect x="-2" y="170" width="364" height="66" fill="#B9DAA5" stroke="#3E3A39" stroke-width="3"/><path d="M0 227H360" stroke="#3E3A39" stroke-width="3"/>
+<g stroke="#3E3A39" stroke-width="3" stroke-linecap="round"><path d="M80 48L18 172M80 48L142 172"/>
+<path d="M56.0 96 H104.0"/>
+<path d="M43.0 122 H117.0"/>
+<path d="M30.0 148 H130.0"/>
+<path d="M19.0 170 H141.0"/>
+</g>
+<g class="lan"><path d="M71.5 70 v-5" stroke="#3E3A39" stroke-width="2"/><ellipse cx="71.5" cy="80" rx="7.5" ry="10" fill="#F2A497" stroke="#3E3A39" stroke-width="2.5"/><path d="M66.5 76 h10M66.5 84 h10" stroke="#3E3A39" stroke-width="1.5"/></g>
+<g class="lan b"><path d="M88.5 70 v-5" stroke="#3E3A39" stroke-width="2"/><ellipse cx="88.5" cy="80" rx="7.5" ry="10" fill="#F6D27A" stroke="#3E3A39" stroke-width="2.5"/><path d="M83.5 76 h10M83.5 84 h10" stroke="#3E3A39" stroke-width="1.5"/></g>
+<g class="lan"><path d="M63.0 96 v-5" stroke="#3E3A39" stroke-width="2"/><ellipse cx="63.0" cy="106" rx="7.5" ry="10" fill="#B9DAA5" stroke="#3E3A39" stroke-width="2.5"/><path d="M58.0 102 h10M58.0 110 h10" stroke="#3E3A39" stroke-width="1.5"/></g>
+<g class="lan b"><path d="M80.0 96 v-5" stroke="#3E3A39" stroke-width="2"/><ellipse cx="80.0" cy="106" rx="7.5" ry="10" fill="#afa8e6" stroke="#3E3A39" stroke-width="2.5"/><path d="M75.0 102 h10M75.0 110 h10" stroke="#3E3A39" stroke-width="1.5"/></g>
+<g class="lan"><path d="M97.0 96 v-5" stroke="#3E3A39" stroke-width="2"/><ellipse cx="97.0" cy="106" rx="7.5" ry="10" fill="#F2A497" stroke="#3E3A39" stroke-width="2.5"/><path d="M92.0 102 h10M92.0 110 h10" stroke="#3E3A39" stroke-width="1.5"/></g>
+<g class="lan b"><path d="M54.5 122 v-5" stroke="#3E3A39" stroke-width="2"/><ellipse cx="54.5" cy="132" rx="7.5" ry="10" fill="#F6D27A" stroke="#3E3A39" stroke-width="2.5"/><path d="M49.5 128 h10M49.5 136 h10" stroke="#3E3A39" stroke-width="1.5"/></g>
+<g class="lan"><path d="M71.5 122 v-5" stroke="#3E3A39" stroke-width="2"/><ellipse cx="71.5" cy="132" rx="7.5" ry="10" fill="#B9DAA5" stroke="#3E3A39" stroke-width="2.5"/><path d="M66.5 128 h10M66.5 136 h10" stroke="#3E3A39" stroke-width="1.5"/></g>
+<g class="lan b"><path d="M88.5 122 v-5" stroke="#3E3A39" stroke-width="2"/><ellipse cx="88.5" cy="132" rx="7.5" ry="10" fill="#afa8e6" stroke="#3E3A39" stroke-width="2.5"/><path d="M83.5 128 h10M83.5 136 h10" stroke="#3E3A39" stroke-width="1.5"/></g>
+<g class="lan"><path d="M105.5 122 v-5" stroke="#3E3A39" stroke-width="2"/><ellipse cx="105.5" cy="132" rx="7.5" ry="10" fill="#F2A497" stroke="#3E3A39" stroke-width="2.5"/><path d="M100.5 128 h10M100.5 136 h10" stroke="#3E3A39" stroke-width="1.5"/></g>
+<g class="lan b"><path d="M46.0 148 v-5" stroke="#3E3A39" stroke-width="2"/><ellipse cx="46.0" cy="158" rx="7.5" ry="10" fill="#F6D27A" stroke="#3E3A39" stroke-width="2.5"/><path d="M41.0 154 h10M41.0 162 h10" stroke="#3E3A39" stroke-width="1.5"/></g>
+<g class="lan"><path d="M63.0 148 v-5" stroke="#3E3A39" stroke-width="2"/><ellipse cx="63.0" cy="158" rx="7.5" ry="10" fill="#B9DAA5" stroke="#3E3A39" stroke-width="2.5"/><path d="M58.0 154 h10M58.0 162 h10" stroke="#3E3A39" stroke-width="1.5"/></g>
+<g class="lan b"><path d="M80.0 148 v-5" stroke="#3E3A39" stroke-width="2"/><ellipse cx="80.0" cy="158" rx="7.5" ry="10" fill="#afa8e6" stroke="#3E3A39" stroke-width="2.5"/><path d="M75.0 154 h10M75.0 162 h10" stroke="#3E3A39" stroke-width="1.5"/></g>
+<g class="lan"><path d="M97.0 148 v-5" stroke="#3E3A39" stroke-width="2"/><ellipse cx="97.0" cy="158" rx="7.5" ry="10" fill="#F2A497" stroke="#3E3A39" stroke-width="2.5"/><path d="M92.0 154 h10M92.0 162 h10" stroke="#3E3A39" stroke-width="1.5"/></g>
+<g class="lan b"><path d="M114.0 148 v-5" stroke="#3E3A39" stroke-width="2"/><ellipse cx="114.0" cy="158" rx="7.5" ry="10" fill="#F6D27A" stroke="#3E3A39" stroke-width="2.5"/><path d="M109.0 154 h10M109.0 162 h10" stroke="#3E3A39" stroke-width="1.5"/></g>
+<g stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"><rect x="249" y="164" width="12" height="9" fill="#F6D27A"/><path d="M255 78l-26 38h52z" fill="#B9DAA5"/><path d="M255 100l-34 38h68z" fill="#B9DAA5"/><path d="M255 124l-42 42h84z" fill="#B9DAA5"/>
+<path class="star" d="M255 54l5 11 12 1-9 8 3 12-11-7-11 7 3-12-9-8 12-1z" fill="#F6D27A"/>
+<circle cx="248" cy="108" r="4" fill="#F2A497"/>
+<circle cx="262" cy="126" r="4" fill="#afa8e6"/>
+<circle cx="238" cy="150" r="4" fill="#F6D27A"/>
+<circle cx="270" cy="152" r="4" fill="#F2A497"/>
+<circle cx="254" cy="140" r="4" fill="#A8D3E6"/>
+</g>
+<g transform="translate(180 188) scale(.8) translate(-180 -148)"><g stroke="#3E3A39" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round">
+<g class="steam"><path d="M168 131q-6-8 0-15t0-13" fill="none"/></g><g class="steam b"><path d="M180 128q-6-8 0-15t0-13" fill="none"/></g><g class="steam c"><path d="M192 131q-6-8 0-15t0-13" fill="none"/></g>
+<rect x="166" y="186" width="28" height="7" rx="3" fill="#F2A497"/><path d="M146 148q0 40 34 40t34-40z" fill="#FFFCF6"/><path d="M148 162q32 14 64 0" fill="none" stroke="#F2A497"/>
+<ellipse cx="180" cy="148" rx="34" ry="11" fill="#FFFCF6"/><ellipse cx="180" cy="148" rx="28" ry="8" fill="#F6D27A" stroke-width="2.5"/>
+<path d="M158 150q4-3 8 0t8 0M186 153q4-3 8 0t8 0M162 144q4-3 8 0" fill="none" stroke-width="1.9"/>
+<g transform="translate(156 148)" stroke-width="2.5"><path d="M-8 4a8 8 0 0 1 16 0z" fill="#FFFCF6"/><path d="M0 4v-8M-4 4l-3-6M4 4l3-6" fill="none" stroke-width="1.9"/></g>
+<g transform="translate(172 145) rotate(-8)" stroke-width="2.5"><rect x="-15" y="-4.5" width="25" height="9" rx="4.5" fill="#FFFCF6"/><path d="M-9-4v8M-3-4v8M3-4v8" stroke="#F2A497" stroke-width="2.5"/><path d="M10-2q8-5 12-1M10 0q9 1 12 5M10 2q6 6 10 6" fill="none" stroke="#F2A497"/></g>
+<g transform="translate(172 152) rotate(6)" stroke-width="2.5"><rect x="-15" y="-4.5" width="25" height="9" rx="4.5" fill="#FFFCF6"/><path d="M-9-4v8M-3-4v8M3-4v8" stroke="#F2A497" stroke-width="2.5"/><path d="M10-2q8-5 12-1M10 0q9 1 12 5M10 2q6 6 10 6" fill="none" stroke="#F2A497"/></g>
+<g stroke-width="1.9" fill="#B9DAA5"><circle cx="201" cy="146" r="3.5"/><circle cx="206" cy="149" r="3.5"/><circle cx="199" cy="152" r="3.5"/><circle cx="204" cy="143" r="3"/></g>
+</g></g>
+<g class="bob" style="animation-delay:-1s"><g stroke="#3E3A39" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"><rect x="40" y="198" width="44" height="26" rx="6" fill="#F6D27A"/><ellipse cx="62" cy="199" rx="17" ry="5" fill="#F2A497"/><circle cx="56" cy="198" r="2" fill="#B9DAA5" stroke-width="1.2"/><circle cx="64" cy="200" r="2" fill="#B9DAA5" stroke-width="1.2"/><circle cx="70" cy="198" r="2" fill="#B9DAA5" stroke-width="1.2"/><rect x="48" y="186" width="30" height="9" rx="3" fill="#F6D27A" transform="rotate(-18 62 190)"/></g></g>
+<g class="bob" style="animation-delay:-2s"><g stroke="#3E3A39" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"><path d="M104 206h36l-5 18h-26z" fill="#FFFCF6"/><path d="M106 206q2-20 16-20t16 20z" fill="#FFFCF6"/><circle cx="116" cy="198" r="3.5" fill="#F2A497" stroke-width="1.5"/><circle cx="125" cy="193" r="3.5" fill="#F6D27A" stroke-width="1.5"/><circle cx="131" cy="200" r="3.5" fill="#afa8e6" stroke-width="1.5"/><path d="M132 186l9-16"/></g></g>
+<g class="bob"><g transform="translate(326 172) rotate(-16)" stroke="#3E3A39" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"><path d="M0 22V42"/><rect x="-8" y="-22" width="16" height="44" rx="8" fill="#F6D27A"/><path d="M-8-8h16M-8 2h16M-8 12h16M0-22v44" stroke-width="1.5"/><path d="M-9 24q-8-10-4-24 8 8 13 24z" fill="#B9DAA5"/><path d="M9 24q8-10 4-24-8 8-13 24z" fill="#B9DAA5"/></g></g>
+</svg>
+<div class="txt">
+<h1>台南小旅行</h1>
+<p>12/6（日）– 12/7（一）・聖誕市集 × 千燈祭</p>
+<div class="cd" id="cd" aria-live="off"></div>
+</div>
+</div>
+
+<section id="go">
+<h2>交通</h2>
+<div class="card go">
+<div class="leg"><div class="ic" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"><rect x="5" y="4" width="20" height="18" rx="6" fill="#FFFCF6"/><path d="M5 15h20M10 26l3-4M20 26l-3-4"/></svg></div><div><small>去程・12/6（日）</small><strong>11:35 台南火車站會合</strong><small>各自前往，在火車站集合</small></div></div>
+<div class="leg back"><div class="ic" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"><rect x="5" y="4" width="20" height="18" rx="6" fill="#FFFCF6"/><path d="M5 15h20M10 26l3-4M20 26l-3-4"/></svg></div><div><small>回程・12/7（一）</small><strong>16:00 台南火車站</strong><small>結束旅程，平安回家</small></div></div>
+</div>
+<div class="card trn" style="margin-top:14px"><h3>火車時刻</h3>
+<div class="tr"><span class="tag bike">去程</span><b>08:08 – 11:32</b></div>
+<div class="tr"><span class="tag share">回程</span><b>16:26 – 19:47</b></div></div>
+</section>
+
+<section id="plan">
+<h2>每日行程</h2>
+<div class="tabs" role="tablist">
+<button role="tab" id="tab0" aria-selected="true" aria-controls="p0"><b>12/6</b><span>週日・Day 1</span></button>
+<button role="tab" id="tab1" aria-selected="false" aria-controls="p1"><b>12/7</b><span>週一・Day 2</span></button>
+</div>
+
+<div class="panel" id="p0" role="tabpanel" aria-labelledby="tab0">
+<ol class="tl">
+<li><span class="t">11:35</span><h3>台南火車站會合</h3><p>集合出發！</p></li>
+<li><span class="t">12:30</span><h3>葉家小卷米粉</h3><p>午餐時間</p><p class="addr">地址：中西區府前里國華街二段142號</p><span class="tag uber">Uber</span></li>
+<li><span class="t">13:30</span><h3>路境行旅台南西門館</h3><p>Check in，先寄放行李</p><p class="addr">地址：臺南市中西區南美里西門路二段76號</p><span class="tag walk">步行</span></li>
+<li><span class="t">14:00</span><h3>南都石頭燜烤玉米</h3><p>先來份燜烤玉米</p><p class="addr">地址：中西區府前里康樂街47號</p><span class="tag walk">步行</span></li>
+<li><span class="t">接著</span><h3>河樂廣場 聖誕市集 <span class="tag must">必去</span></h3><p>逛聖誕市集</p><p class="addr">地址：中西區大涼里中正路343-20號</p><span class="tag walk">步行</span></li>
+<li><span class="t">17:30</span><h3>鹽埕出張所 千燈祭 <span class="tag must">必去</span></h3><p>看千燈祭點燈，並在附近吃晚餐</p><p class="addr">地址：南區鹽埕里鹽埕路131巷57號</p><span class="tag talk">晚餐待討論</span></li>
+</ol>
+</div>
+
+<div class="panel" id="p1" role="tabpanel" aria-labelledby="tab1" hidden>
+<ol class="tl">
+<li><span class="t">11:00</span><h3>Check out</h3><p>退房後出發逛景點</p><p class="addr">地址：臺南市中西區南美里西門路二段76號</p><span class="tag walk">住宿</span></li>
+<li><span class="t">上午～</span><h3>西門淺草、西市場</h3><p class="addr">地址：中西區淺草里國華街三段26號</p><span class="tag walk">步行</span><span class="tag bike">Ubike</span></li>
+<li><span class="t">接著</span><h3>蝸牛巷</h3><p class="addr">地址：中西區南美里中正路150巷12號</p><span class="tag walk">步行</span><span class="tag bike">Ubike</span></li>
+<li><span class="t">接著</span><h3>林百貨</h3><p class="addr">地址：中西區南美里忠義路二段63號</p><span class="tag walk">步行</span><span class="tag bike">Ubike</span></li>
+<li><span class="t">接著</span><h3>吳園</h3><p class="addr">地址：中西區赤嵌里民權路二段30號</p><span class="tag walk">步行</span><span class="tag bike">Ubike</span></li>
+<li><span class="t">接著</span><h3>仰角舶物</h3><p class="addr">地址：中西區赤嵌里民權路二段78號</p><span class="tag walk">步行</span><span class="tag bike">Ubike</span></li>
+<li><span class="t">午餐</span><h3>午餐</h3><span class="tag talk">待討論</span></li>
+<li><span class="t">16:00</span><h3>台南火車站</h3><p>平安回家！</p></li>
+</ol>
+</div>
+</section>
+
+<section id="todo">
+<h2>待辦清單</h2>
+<div class="card">
+<p class="prog" data-prog="todo"></p>
+<ul class="ck" data-list="todo">
+<li><label><input type="checkbox"><span>討論 12/6 晚餐要吃什麼</span></label></li>
+<li><label><input type="checkbox"><span>討論 12/7 午餐要吃什麼</span></label></li>
+<li><label><input type="checkbox"><span>確認千燈祭點燈時間</span></label></li>
+<li><label><input type="checkbox"><span>確認 Ubike／Go share 的 App 都能用</span></label></li>
+<li><label><input type="checkbox"><span>確認 12/7 16:00 的回程車票</span></label></li>
+</ul>
+</div>
+</section>
+
+<section id="stay">
+<h2>住宿資訊</h2>
+<div class="card stay">
+<h3>路境行旅台南西門館</h3>
+<div class="row"><span>地址</span><b>臺南市中西區南美里西門路二段76號</b></div>
+<div class="row"><span>12/6 13:30</span><b>Check in・先寄放行李</b></div>
+<div class="row"><span>12/7 11:00</span><b>Check out</b></div>
+</div>
+</section>
+
+<section id="food">
+<h2>當地美食清單</h2>
+<div class="card">
+<p class="prog" data-prog="food"></p>
+<p class="prog">12/6 晚餐、12/7 午餐還沒決定，可以從這裡挑。</p>
+<ul class="ck" data-list="food">
+<li><label><input type="checkbox"><span>葉家小卷米粉（12/6 午餐，已排入行程）</span></label></li>
+<li><label><input type="checkbox"><span>南都石頭燜烤玉米（12/6，已排入行程）</span></label></li>
+<li><label><input type="checkbox"><span>牛肉湯</span></label></li>
+<li><label><input type="checkbox"><span>擔仔麵</span></label></li>
+<li><label><input type="checkbox"><span>鍋燒意麵</span></label></li>
+<li><label><input type="checkbox"><span>棺材板</span></label></li>
+<li><label><input type="checkbox"><span>蝦捲</span></label></li>
+<li><label><input type="checkbox"><span>碗粿</span></label></li>
+<li><label><input type="checkbox"><span>剉冰／冰品</span></label></li>
+</ul>
+</div>
+</section>
+
+<section id="pre">
+<h2>出發前清單</h2>
+<div class="card">
+<p class="prog" data-prog="pre"></p>
+<ul class="ck" data-list="pre">
+<li><label><input type="checkbox"><span>去回程車票確認</span></label></li>
+<li><label><input type="checkbox"><span>Go share 註冊並完成驗證</span></label></li>
+<li><label><input type="checkbox"><span>確認住宿訂房資料</span></label></li>
+<li><label><input type="checkbox"><span>查看台南天氣預報</span></label></li>
+<li><label><input type="checkbox"><span>手機與行動電源充飽電</span></label></li>
+</ul>
+</div>
+</section>
+
+<section id="bag">
+<h2>行李清單</h2>
+<div class="card">
+<p class="prog" data-prog="bag"></p>
+<ul class="ck" data-list="bag">
+<li><label><input type="checkbox"><span>身分證件・健保卡</span></label></li>
+<li><label><input type="checkbox"><span>悠遊卡／零錢／信用卡</span></label></li>
+<li><label><input type="checkbox"><span>手機・充電線・行動電源</span></label></li>
+<li><label><input type="checkbox"><span>換洗衣物（一晚份）</span></label></li>
+<li><label><input type="checkbox"><span>薄外套（晚上點燈會涼）</span></label></li>
+<li><label><input type="checkbox"><span>好走的鞋（要走很多路）</span></label></li>
+<li><label><input type="checkbox"><span>雨具・防曬用品</span></label></li>
+<li><label><input type="checkbox"><span>盥洗用品・保養品</span></label></li>
+</ul>
+</div>
+</section>
+<footer>旅途愉快，吃好玩好！</footer>
+</main>
+<script>
+(function(){
+var tabs=document.querySelectorAll('[role=tab]'),panels=[document.getElementById('p0'),document.getElementById('p1')];
+tabs.forEach(function(t,i){t.addEventListener('click',function(){
+tabs.forEach(function(x,j){x.setAttribute('aria-selected',j===i);panels[j].hidden=j!==i;});
+var p=panels[i];p.style.animation='none';void p.offsetWidth;p.style.animation='';
+});});
+var target=new Date('2026-12-06T11:35:00+08:00'),cd=document.getElementById('cd');
+function tick(){var d=target-Date.now();
+if(d<=0){cd.innerHTML='<div style="width:auto;padding:2px 20px"><b style="font-size:20px">旅程進行中！</b></div>';return;}
+var D=Math.floor(d/864e5),H=Math.floor(d%864e5/36e5),M=Math.floor(d%36e5/6e4),S=Math.floor(d%6e4/1e3);
+cd.innerHTML='<div><b>'+D+'</b><span>天</span></div><div><b>'+H+'</b><span>時</span></div><div><b>'+M+'</b><span>分</span></div><div><b>'+S+'</b><span>秒</span></div>';}
+tick();setInterval(tick,1000);
+document.querySelectorAll('[data-list]').forEach(function(ul){
+var k='tn26:'+ul.dataset.list,boxes=ul.querySelectorAll('input'),pr=document.querySelector('[data-prog='+ul.dataset.list+']'),saved=[];
+try{saved=JSON.parse(localStorage.getItem(k)||'[]');}catch(e){}
+function upd(){var n=0;boxes.forEach(function(b){if(b.checked)n++;});pr.textContent='完成 '+n+' / '+boxes.length;
+try{localStorage.setItem(k,JSON.stringify(Array.prototype.map.call(boxes,function(b){return b.checked;})));}catch(e){}}
+boxes.forEach(function(b,i){b.checked=!!saved[i];b.addEventListener('change',upd);});upd();});
+})();
+</script>
+</body>
+</html>
